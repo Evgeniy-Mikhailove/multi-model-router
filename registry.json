@@ -1,0 +1,186 @@
+{
+  "skills": [
+    {
+      "id": "copywriting",
+      "group": "content-marketing",
+      "priority": "primary",
+      "description": "Posts, landing pages, channel content, sales copy",
+      "triggers": ["post", "landing", "copy", "headline", "text for channel"]
+    },
+    {
+      "id": "sales-automator",
+      "group": "content-marketing",
+      "priority": "primary",
+      "description": "Sales scripts, follow-ups, funnels",
+      "triggers": ["sales script", "follow-up", "objection handling", "sales funnel"]
+    },
+    {
+      "id": "brainstorming",
+      "group": "content-marketing",
+      "priority": "primary",
+      "description": "Idea generation before any feature or content",
+      "triggers": ["brainstorm", "ideas", "generate ideas", "what if"]
+    },
+    {
+      "id": "carousel-creator",
+      "group": "content-marketing",
+      "priority": "primary",
+      "description": "Carousel slides for social media",
+      "triggers": ["carousel", "slides", "social media slides"]
+    },
+    {
+      "id": "humanizer",
+      "group": "content-marketing",
+      "priority": "primary",
+      "description": "Remove AI traces, make text feel human",
+      "triggers": ["humanize", "remove AI", "make natural", "human voice"]
+    },
+    {
+      "id": "photo-prompt-master",
+      "group": "design-media",
+      "priority": "primary",
+      "description": "Image prompts for Midjourney, Stable Diffusion, DALL-E, Flux",
+      "triggers": ["image prompt", "midjourney", "stable diffusion", "dall-e", "flux"]
+    },
+    {
+      "id": "canvas-design",
+      "group": "design-media",
+      "priority": "primary",
+      "description": "Poster, visual, .png/.pdf design",
+      "triggers": ["poster", "visual", "design", "banner"]
+    },
+    {
+      "id": "frontend-design",
+      "group": "design-media",
+      "priority": "primary",
+      "description": "UI design, landing pages, web components",
+      "triggers": ["UI", "landing", "web design", "frontend"]
+    },
+    {
+      "id": "api-integration-specialist",
+      "group": "automation-api",
+      "priority": "primary",
+      "description": "n8n integrations, webhooks, OAuth, Telegram API",
+      "triggers": ["n8n", "webhook", "oauth", "API integration", "telegram api"]
+    },
+    {
+      "id": "python-pro",
+      "group": "coding-dev",
+      "priority": "primary",
+      "description": "Python scripts, automation, FastAPI",
+      "triggers": ["python", "script", "fastapi", "automation"]
+    },
+    {
+      "id": "senior-architect",
+      "group": "coding-dev",
+      "priority": "conditional",
+      "description": "System design, stack selection",
+      "triggers": ["architecture", "system design", "choose stack"]
+    },
+    {
+      "id": "find-bugs",
+      "group": "review-debug-security",
+      "priority": "primary",
+      "description": "Find bugs in git diff",
+      "triggers": ["bug", "find bugs", "git diff", "review"]
+    },
+    {
+      "id": "vulnerability-scanner",
+      "group": "review-debug-security",
+      "priority": "primary",
+      "description": "OWASP security audit",
+      "triggers": ["security", "OWASP", "vulnerability", "audit"]
+    },
+    {
+      "id": "planning",
+      "group": "planning-management",
+      "priority": "primary",
+      "description": "Tasks with 5+ steps, research projects",
+      "triggers": ["plan", "roadmap", "strategy", "multi-step"]
+    },
+    {
+      "id": "ci-cd-automation",
+      "group": "devops-cicd",
+      "priority": "primary",
+      "description": "Pipelines, GitHub Actions, quality gates",
+      "triggers": ["CI/CD", "pipeline", "github actions", "deploy"]
+    },
+    {
+      "id": "cicd-quick-setup",
+      "group": "devops-cicd",
+      "priority": "primary",
+      "description": "Quick CI/CD setup with Docker, Railway, VPS, Vercel",
+      "triggers": ["docker", "railway", "vercel", "quick deploy", "CI/CD setup"]
+    },
+    {
+      "id": "ai-agents-architect",
+      "group": "ai-ml-agents",
+      "priority": "primary",
+      "description": "AI agent architecture, tool use, multi-agent systems",
+      "triggers": ["agent", "multi-agent", "tool use", "AI architecture"]
+    },
+    {
+      "id": "prompt-systems-engineering",
+      "group": "ai-ml-agents",
+      "priority": "primary",
+      "description": "Prompt engineering for agents: CoT, ReAct, RAG, ToT",
+      "triggers": ["prompt", "CoT", "ReAct", "RAG", "chain of thought"]
+    },
+    {
+      "id": "systematic-debugging",
+      "group": "code-quality",
+      "priority": "primary",
+      "description": "Systematic approach to debugging errors",
+      "triggers": ["debug", "error", "not working", "broken"]
+    },
+    {
+      "id": "test-driven-development",
+      "group": "code-quality",
+      "priority": "primary",
+      "description": "TDD - write tests before code",
+      "triggers": ["TDD", "test first", "test driven"]
+    },
+    {
+      "id": "xlsx-official",
+      "group": "files-documents",
+      "priority": "primary",
+      "description": "Excel file processing",
+      "triggers": ["excel", "xlsx", "spreadsheet"]
+    },
+    {
+      "id": "docx",
+      "group": "files-documents",
+      "priority": "primary",
+      "description": "Word document processing",
+      "triggers": ["word", "docx", "document"]
+    },
+    {
+      "id": "obsidian-markdown",
+      "group": "obsidian-knowledge",
+      "priority": "primary",
+      "description": "Obsidian markdown files, wikilinks, callouts",
+      "triggers": ["obsidian", "markdown", "wikilinks", "vault"]
+    },
+    {
+      "id": "graphify",
+      "group": "obsidian-knowledge",
+      "priority": "primary",
+      "description": "Knowledge graph, connections, NetworkX traversal",
+      "triggers": ["graph", "knowledge graph", "connections", "graphify"]
+    },
+    {
+      "id": "skill-creator",
+      "group": "orchestration-meta",
+      "priority": "primary",
+      "description": "Create new skills for Claude Code",
+      "triggers": ["create skill", "new skill", "skill template"]
+    },
+    {
+      "id": "claude-code-guide",
+      "group": "orchestration-meta",
+      "priority": "primary",
+      "description": "Questions about Claude Code, hooks, commands",
+      "triggers": ["claude code", "hooks", "commands", "settings"]
+    }
+  ]
+}
