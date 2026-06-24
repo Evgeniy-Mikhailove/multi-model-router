@@ -1,5 +1,7 @@
 # Multi-Model Orchestration Router
 
+![Multi-Model Orchestration Router](assets/hero.png)
+
 **Route AI tasks to the optimal model across 3 providers and 6 cost tiers - automatically.**
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
