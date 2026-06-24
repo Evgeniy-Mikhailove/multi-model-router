@@ -7,6 +7,7 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9+-green.svg)](https://python.org)
 [![Models](https://img.shields.io/badge/Models-6_Tiers-blue.svg)](#model-tiers)
+[![GitHub stars](https://img.shields.io/github/stars/Evgeniy-Mikhailove/multi-model-router?style=social)](https://github.com/Evgeniy-Mikhailove/multi-model-router/stargazers)
 
 ---
 
