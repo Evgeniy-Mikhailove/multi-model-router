@@ -6,25 +6,28 @@ Task classification and model routing rules.
 
 ## Principles
 
-1. **Cheapest first.** haiku < gemini < openai < sonnet < fable/opus
+1. **Cheapest first.** haiku < gemini < openai < sonnet-4.6 < sonnet-5 < opus < fable
 2. **Direct answer over delegation** - if the task is simple, answer directly
 3. **Skill = methodology**, not executor. Skills apply silently on top of the main response
 4. **Don't spawn agents without reason** - only when context isolation is needed
 5. **Haiku for gate-keeping** - if the task is classification/validation/parsing, Haiku first
-6. **Fable for creative** - storytelling, metaphors, unusual formats - not Sonnet
+6. **Sonnet 4.6 vs Sonnet 5:** single-step no planning = `sonnet-engineer` (4.6); multi-step with tools/planning = `sonnet-agent` (5)
+7. **Fable only after Sonnet fails** - Fable costs more than Opus, try Sonnet first
+8. **Opus = risks only** - security, irreversible prod ops, adversarial review; Sonnet 5 covers architecture and complex debug
 
 ---
 
-## Task Classification (6-tier routing)
+## Task Classification (7-tier routing - Claude 5 family)
 
 | Task type | Executor | Cost tier |
 |---|---|---|
 | Classification, tagging, format validation, routing, parsing | `haiku-worker` | lowest |
 | Summarization, extraction, drafting, broad reading, translation, log analysis | `gemini-worker` | low |
 | Focused coding, tests, refactors, patch suggestions | `openai-worker` -> fallback `sonnet-engineer` | low-medium |
-| Standard engineering, multi-file changes, debugging, Russian content | `sonnet-engineer` | medium |
-| Narrative, storytelling, creative content, unexpected brainstorm angles | `fable-creative` | medium-high |
-| Architecture, risky migrations, ambiguous root cause, security | `opus-architect` | high |
+| Quick single-step tasks, RU content, fast edits, dialog | `sonnet-engineer` (Sonnet 4.6) | medium |
+| Agentic/multi-step, planning, tool use, long context, complex debug, architecture | `sonnet-agent` (Sonnet 5) | medium-high |
+| Narrative, storytelling, creative - ONLY after Sonnet gave flat result | `fable-creative` | very_high |
+| Security audit, irreversible prod ops, adversarial review | `opus-architect` | high |
 
 ## Escalation Policy
 
